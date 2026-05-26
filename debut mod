@@ -6,9 +6,38 @@ var enemy = 100;
 
 ext._shutdown = function() {};
 
-ext._getStatus = function() {;
+ext._getStatus = function() {
     return {
       status: 2,
       msg: 'Ready'
     };
  };
+
+ext.spawnAnt = function() {
+
+if (food >= 10) {
+    food -=10;
+    army += 1;
+    }
+};
+
+ext.spawnAnt = function() {
+ext.get.Food = function() {
+    return food;
+};
+
+var descriptor = {
+    blocks: [
+         [' ', 'créer fourmi', 'spawnAnt],
+
+         ['r', 'nourriture',getFood']
+     ]
+};
+
+ScatchExtension.register(
+   'Antwar',
+   descriptor
+   ext
+);
+
+})({});
