@@ -1,43 +1,51 @@
 (function(ext) {
 
 var food = 100;
-var army = 0; 
+var army = 0;
 var enemy = 100;
 
 ext._shutdown = function() {};
 
 ext._getStatus = function() {
+
     return {
-      status: 2,
-      msg: 'Ready'
+        status: 2,
+        msg: 'Ready'
     };
- };
+
+};
 
 ext.spawnAnt = function() {
 
-if (food >= 10) {
-    food -=10;
-    army += 1;
+    if (food >= 10) {
+
+        food -= 10;
+        army += 1;
+
     }
 };
 
-ext.spawnAnt = function() {
-ext.get.Food = function() {
+ext.getFood = function() {
+
     return food;
+
 };
 
 var descriptor = {
-    blocks: [
-         [' ', 'créer fourmi', 'spawnAnt],
 
-         ['r', 'nourriture',getFood']
-     ]
+    blocks: [
+
+        [' ', 'créer fourmi', 'spawnAnt'],
+
+        ['r', 'nourriture', 'getFood']
+
+    ]
 };
 
-ScatchExtension.register(
-   'Antwar',
-   descriptor
-   ext
+ScratchExtensions.register(
+    'AntWar',
+    descriptor,
+    ext
 );
 
 })({});
