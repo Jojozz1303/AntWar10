@@ -6,6 +6,8 @@
             return {
                 id: 'antwar10',
                 name: 'AntWar10',
+                color1: '#ff0000',
+
                 blocks: [
                     {
                         opcode: 'hello',
@@ -20,6 +22,10 @@
             console.log('Bonjour !');
         }
     }
+
+    Scratch.extensions.register(new AntWar10());
+
+})(Scratch);
 
     Scratch.extensions.register(new AntWar10());
 
