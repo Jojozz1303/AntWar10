@@ -6,7 +6,7 @@
             return {
                 id: 'antwar10',
                 name: 'AntWar10',
-                color1: '#ff0000',
+                color1: '#fffff1',
 
                 blocks: [
                     {
