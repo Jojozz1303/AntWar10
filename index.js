@@ -42,7 +42,7 @@ var descriptor = {
     ]
 };
 
-ScratchExtensions.register(
+ScratchExtensions.register(new AntWar10());
     'AntWar',
     descriptor,
     ext
