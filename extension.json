@@ -1,0 +1,8 @@
+{
+  "name": "AntWar10",
+  "extensionId": "antwar10",
+  "version": "1.0.0",
+  "description": "Guerre de fourmis",
+  "icon": "icon.png",
+  "main": "index.js"
+}
