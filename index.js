@@ -1,51 +1,26 @@
-(function(ext) {
+(function (Scratch) {
+    'use strict';
 
-var food = 100;
-var army = 0;
-var enemy = 100;
+    class AntWar10 {
+        getInfo() {
+            return {
+                id: 'antwar10',
+                name: 'AntWar10',
+                blocks: [
+                    {
+                        opcode: 'hello',
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: 'dire bonjour'
+                    }
+                ]
+            };
+        }
 
-ext._shutdown = function() {};
-
-ext._getStatus = function() {
-
-    return {
-        status: 2,
-        msg: 'Ready'
-    };
-
-};
-
-ext.spawnAnt = function() {
-
-    if (food >= 10) {
-
-        food -= 10;
-        army += 1;
-
+        hello() {
+            console.log('Bonjour !');
+        }
     }
-};
 
-ext.getFood = function() {
+    Scratch.extensions.register(new AntWar10());
 
-    return food;
-
-};
-
-var descriptor = {
-
-    blocks: [
-
-        [' ', 'créer fourmi', 'spawnAnt'],
-
-        ['r', 'nourriture', 'getFood']
-
-    ]
-};
-
-ScratchExtensions.register(new AntWar10());
-    'AntWar',
-    descriptor,
-    ext
-);
-
-})({});
+})(Scratch);
