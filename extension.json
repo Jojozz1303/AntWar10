@@ -3,5 +3,11 @@
   "extensionId": "antwar10",
   "version": "1.0.0",
   "description": "Guerre de fourmis",
-  "main": "index.js"
+  "author": "Jojozz1303",
+  "homepage": "https://github.com/Jojozz1303/AntWar10",
+  "main": "index.js",
+  "platform": [
+    "mblock"
+  ],
+  "category": "other"
 }
